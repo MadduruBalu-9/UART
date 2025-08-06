@@ -4,8 +4,7 @@ class test extends uvm_test;
 function new(input string inst = "test", uvm_component c);
 super.new(inst,c);
 endfunction
- 
- 
+
 env e;
 rand_baud rb;
 
@@ -25,4 +24,5 @@ rb.start(e.a.seqr);
 #20;
 phase.drop_objection(this);
 endtask
+
 endclass
